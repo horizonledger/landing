@@ -388,3 +388,16 @@ section {
   background-size: cover;
   background-position: center bottom;
 }
+
+/* ==========================================================================
+   Secondary Styles
+   ========================================================================== */
+
+.social-links {
+  padding: 40px 0 0 0;
+}
+
+.social-logo {
+  width: 50px;
+  margin: 0 10px 0 10px;
+}
