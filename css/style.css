@@ -38,11 +38,6 @@ body {
   cursor: pointer;
 }
 
-.container {
-  width: var(--container-width-lg);
-  margin: auto;
-}
-
 .tsuka {
   height: 50px;
   margin-left: 10px;
