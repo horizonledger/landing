@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.webp" type="image/png" sizes="16x16"/>
 
     <!-- Facebook sharing meta tags -->
     <meta property="og:type" content="website" />
@@ -24,116 +30,30 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:image" content="" />
-
     <meta name="description" content="" />
 
-    <title>Tsuka finance</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Nanum+Gothic&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link
-      rel="icon"
-      href="/images/favicon.png"
-      type="image/png"
-      sizes="16x16"
-    /> -->
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/ui.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/animations.css" />
+    <title>Tsuka Finance</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   </head>
   <body>
-    <div class="loading active">
-      <div class="loading-container">
-        <!-- <img src="./images/logo-mark.svg" alt="loading" /> -->
-        
+    <header class="clearfix">
+      <img src="images/logo.svg" alt="logo">
+    </header>
+    <div class="container">
+    </div>
+      <div class="container">
+        <div class="analytics-wrapper">
+        <div class="graph-wrapper">
+          <iframe class="holders" src="https://dune.com/embeds/1651437/2737412/9dd062e0-3155-4fe5-a773-b695d6fdbc54" title="chart 1"></iframe>
+        </div>
+
+        <div class="graph-wrapper">
+          <iframe class="pie" src="https://dune.com/embeds/1651571/2737608/185a8ca6-553a-43ab-b5ac-d5bc876a8695" title="chart 1"></iframe>
+        </div>
       </div>
     </div>
-    <div class="main">
-      <header class="clearfix">
-        <div class="container d-flex f-align-center f-justify-between">
-          <a href="/" class="logo">
-            <!-- <img src="./images/logo.svg" alt="logo" title="DogeStack" /> -->
-            tsuka.finance
-          </a>
-          <ul class="nav">
-            <li class="nav-logo"><img src="./images/logo.svg" alt="" /></li>
-            <!-- <li><a href="#first">Home</a></li> -->
-          </ul>
-        </div>
-        <div id="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </header>
-
-      <section
-        class="hero container-wide animate"
-        id="first"
-        data-id="first"
-        data-index="1"
-      >
-        <div class="container d-flex f-align-center">
-          <div class="w-50 hero-title">
-            <!-- <h1
-              class="text-center animate-elem animate-fadeIn animate-scale-from-big animate-delay-02"
-            >
-            Tsuka.finance
-            </h1> -->
-            <p
-              class="text-center animate-elem animate-fadeIn animate-scale-from-big animate-delay-05"
-            >
-            Tsuka holders over time
-            </p>
-
-            <iframe src="https://dune.com/embeds/1651437/2737412/9dd062e0-3155-4fe5-a773-b695d6fdbc54" height="500px" width="500px" title="chart 1"></iframe>
-            <!-- <br>
-            <iframe src="https://dune.com/embeds/1651571/2737608/185a8ca6-553a-43ab-b5ac-d5bc876a8695" height="500px" width="500px" title="chart 1"></iframe> -->
-            
-            
-          </div>
-
-          <div class="w-50 hero-title">
-            <!-- <h1
-              class="text-center animate-elem animate-fadeIn animate-scale-from-big animate-delay-02"
-            >
-            Tsuka.finance
-            </h1> -->
-            <p
-              class="text-center animate-elem animate-fadeIn animate-scale-from-big animate-delay-05"
-            >
-            Tsuka holders distribution
-            </p>
-
-            <iframe src="https://dune.com/embeds/1651571/2737608/185a8ca6-553a-43ab-b5ac-d5bc876a8695" height="500px" width="500px" title="chart 1"></iframe>
-            
-            
-          </div>
-
-          
-        </div>
-      </section>
-
-    <section>
-      
-      <!-- <p style="margin-left: 10%;">About: tsuka finance is a community project. tsuka will lead the way in defi and decentralisation.</p> -->
-    </section>
-      
-
-      
-
-    </div>
-    <script
-      src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/script.js"></script>
+    <div class="gradient"></div>
+    <div class="gradient2"></div>
   </body>
-</html>
+
+  </html>
