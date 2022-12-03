@@ -50,8 +50,8 @@ body {
 
 .graph-wrapper {
   background-color: var(--color-primary);
-  width: 550px;
-  height: 550px;
+  width: 530px;
+  height: 530px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
