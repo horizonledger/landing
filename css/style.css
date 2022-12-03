@@ -63,6 +63,7 @@ body {
   height: 500px;
   width: 500px;
   border-radius: 5px;
+  border: 0;
 }
 
 .pie {
@@ -70,6 +71,7 @@ body {
   height: 500px;
   width: 500px;
   border-radius: 5px;
+  border: 0;
 }
 
 .gradient {

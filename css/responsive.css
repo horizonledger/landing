@@ -63,8 +63,8 @@
   .graph-wrapper {
     
     background-color: var(--color-primary);
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -75,16 +75,16 @@
 
   .holders {
     background-color: var(--color-white);
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     border-radius: 5px;
     margin: 0 10px;
   }
 
   .pie {
     background-color: var(--color-white);
-    height: 350px;
-    width: 350px;
+    height: 300px;
+    width: 300px;
     border-radius: 5px;
     margin: 0 10px;
   }
