@@ -73,6 +73,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
+  box-shadow: 2px 2px 40px #455858;
 }
 
 .tkn-holders {
