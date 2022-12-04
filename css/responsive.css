@@ -1,3 +1,196 @@
+/*============== MEDIA QUERIES (Large Desktop)=================*/
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+
+  .container {
+    width: var(--container-width-lg);
+    margin: auto;
+  }
+
+  .logo {
+    font-size: 56px;
+    background-image: linear-gradient(to right, #48d4d4, #202693);
+    --webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .tkn-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tkn-wrapper {
+    background-color: var(--color-primary);
+    width: 320px;
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  
+  .tkn-holders {
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 5px;
+  }
+
+  .graph-wrapper {
+    background-image: linear-gradient(to right, #48d4d4, #2d35a9);
+    width: 480px;
+    height: 480px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 40px #455858;
+  }
+  
+  .holders {
+    background-color: var(--color-white);
+    height: 460px;
+    width: 460px;
+    border-radius: 5px;
+    border: 0;
+  }
+  
+  .pie {
+    background-color: var(--color-white);
+    height: 460px;
+    width: 460px;
+    border-radius: 5px;
+    border: 0;
+  }
+
+}
+
+/*============== MEDIA QUERIES (Small Desktop)=================*/
+
+@media screen and (max-device-width: 110px) {
+  .container {
+    width: var(--container-width-md);
+    margin: auto;
+  }
+
+  .logo {
+    font-size: 56px;
+    background-image: linear-gradient(to right, #48d4d4, #202693);
+    --webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .tkn-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tkn-wrapper {
+    background-color: var(--color-primary);
+    width: 320px;
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  
+  .tkn-holders {
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 5px;
+  }
+
+  .graph-wrapper {
+    background-color: var(--color-primary);
+    width: 410px;
+    height: 410px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .holders {
+    background-color: var(--color-white);
+    height: 390px;
+    width: 390px;
+    border-radius: 5px;
+  }
+
+  .pie {
+    background-color: var(--color-white);
+    height: 390px;
+    width: 390px;
+    border-radius: 5px;
+  }
+
+}
+
+/*============== MEDIA QUERIES (Small Desktop)=================*/
+
+@media screen and (max-device-width: 912px) {
+  .container {
+    width: var(--container-width-md);
+    margin: auto;
+  }
+
+  .logo {
+    font-size: 56px;
+    background-image: linear-gradient(to right, #48d4d4, #202693);
+    --webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .tkn-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tkn-wrapper {
+    background-color: var(--color-primary);
+    width: 320px;
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  
+  .tkn-holders {
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 5px;
+  }
+
+  .graph-wrapper {
+    background-color: var(--color-primary);
+    width: 390px;
+    height: 390px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .holders {
+    background-color: var(--color-white);
+    height: 370px;
+    width: 370px;
+    border-radius: 5px;
+  }
+
+  .pie {
+    background-color: var(--color-white);
+    height: 370px;
+    width: 370px;
+    border-radius: 5px;
+  }
+
+}
+
 /*============== MEDIA QUERIES (TABLETS)=================*/
 
 @media screen and (max-width: 1024px) {
@@ -7,14 +200,16 @@
   }
 
   .clearfix {
-    width: 90%;
+    width: var(--container-width-md);
     margin: 2rem auto;
     cursor: pointer;
   }
   
   .logo {
     font-size: 30px;
-    color: var(--color-primary);
+    background-image: linear-gradient(to right, #48d4d4, #202693);
+    --webkit-background-clip: text;
+    color: transparent;
   }
 
   .tkn-flex {
@@ -43,8 +238,8 @@
   .graph-wrapper {
     
     background-color: var(--color-primary);
-    width: 430px;
-    height: 430px;
+    width: 410px;
+    height: 410px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -53,15 +248,15 @@
 
   .holders {
     background-color: var(--color-white);
-    height: 410px;
-    width: 410px;
+    height: 390px;
+    width: 390px;
     border-radius: 5px;
   }
 
   .pie {
     background-color: var(--color-white);
-    height: 410px;
-    width: 410px;;
+    height: 390px;
+    width: 390px;;
     border-radius: 5px;
   }
   
