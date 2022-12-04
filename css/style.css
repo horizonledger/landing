@@ -39,12 +39,12 @@ body {
 
 .clearfix {
   width: var(--container-width-lg);
-  margin: 4rem auto;
+  margin: 2rem auto;
   cursor: pointer;
 }
 
 .logo {
-  font-size: 70px;
+  font-size: 60px;
   color: var(--color-primary);
 }
 
@@ -56,16 +56,6 @@ body {
 .analytics-wrapper {
   display: flex;
   justify-content: space-between;
-}
-
-.graph-wrapper {
-  background-color: var(--color-primary);
-  width: 530px;
-  height: 530px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .grid {
@@ -89,18 +79,28 @@ body {
   border-radius: 5px;
 }
 
+.graph-wrapper {
+  background-color: var(--color-primary);
+  width: 480px;
+  height: 480px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .holders {
   background-color: var(--color-white);
-  height: 500px;
-  width: 500px;
+  height: 460px;
+  width: 460px;
   border-radius: 5px;
   border: 0;
 }
 
 .pie {
   background-color: var(--color-white);
-  height: 500px;
-  width: 500px;
+  height: 460px;
+  width: 460px;
   border-radius: 5px;
   border: 0;
 }
