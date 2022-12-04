@@ -6,29 +6,62 @@
     margin: auto;
   }
 
-  .graph-wrapper {
-    
+  .clearfix {
+    width: 90%;
+    margin: 2rem auto;
+    cursor: pointer;
+  }
+  
+  .logo {
+    font-size: 30px;
+    color: var(--color-primary);
+  }
+
+  .tkn-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  
+  .tkn-wrapper {
     background-color: var(--color-primary);
-    width: 450px;
-    height: 450px;
+    width: 320px;
+    height: 170px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
+    margin: 20px 0px;
+  }
+  
+  .tkn-holders {
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 5px;
+  }
+
+  .graph-wrapper {
+    
+    background-color: var(--color-primary);
+    width: 430px;
+    height: 430px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .holders {
     background-color: var(--color-white);
-    height: 400px;
-    width: 400px;
+    height: 410px;
+    width: 410px;
     border-radius: 5px;
   }
 
   .pie {
     background-color: var(--color-white);
-    height: 400px;
-    width: 400px;
+    height: 410px;
+    width: 410px;;
     border-radius: 5px;
   }
   
@@ -54,6 +87,29 @@
     width: 8rem;
   }
 
+  .tkn-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tkn-wrapper {
+    background-color: var(--color-primary);
+    width: 350px;
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  
+  .tkn-holders {
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    width: 330px;
+  }
+
   .analytics-wrapper {
     display: flex;
     flex-direction: column;
@@ -70,23 +126,22 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 20px 0;
+    margin-top: 20px;
   }
 
   .holders {
     background-color: var(--color-white);
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 330px;
     border-radius: 5px;
     margin: 0 10px;
   }
 
   .pie {
     background-color: var(--color-white);
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 330px;
     border-radius: 5px;
-    margin: 0 10px;
   }
 
   .gradient {

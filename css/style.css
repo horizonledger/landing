@@ -16,7 +16,7 @@
 
   --font-title: Outfit;
 
-  --container-width-lg: 84%;
+  --container-width-lg: 70%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
 
@@ -38,7 +38,7 @@ body {
 }
 
 .clearfix {
-  width: var(--container-width-lg);
+  width: 80%;
   margin: 2rem auto;
   cursor: pointer;
 }
@@ -58,16 +58,16 @@ body {
   justify-content: space-between;
 }
 
-.grid {
+.tkn.flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .tkn-wrapper {
   background-color: var(--color-primary);
   width: 320px;
   height: 170px;
   border-radius: 5px;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   margin: 20px 0px;
