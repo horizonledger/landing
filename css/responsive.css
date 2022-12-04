@@ -1,6 +1,6 @@
 /*============== MEDIA QUERIES (Large Desktop)=================*/
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+@media screen  and (max-device-width: 1600px) {
 
   .container {
     width: var(--container-width-lg);
@@ -65,9 +65,113 @@
 
 }
 
+@media screen  and (max-device-width: 1400px) {
+  .container {
+    width: var(--container-width-md);
+    margin: auto;
+  }
+
+  .logo {
+    font-size: 56px;
+    background-image: linear-gradient(to right, #48d4d4, #202693);
+    --webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .tkn-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .tkn-wrapper {
+    background-color: var(--color-primary);
+    width: 320px;
+    height: 170px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  
+  .tkn-holders {
+    border: none;
+    background-color: var(--color-white);
+    border-radius: 5px;
+  }
+
+  .graph-wrapper {
+    background-color: var(--color-primary);
+    width: 460px;
+    height: 460px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .holders {
+    background-color: var(--color-white);
+    height: 440px;
+    width: 440px;
+    border-radius: 5px;
+  }
+
+  .pie {
+    background-color: var(--color-white);
+    height: 440px;
+    width: 440px;
+    border-radius: 5px;
+  }
+
+}
+
+@media screen and (max-device-width: 916px) {
+  .container {
+    width: var(--container-width-md);
+    margin: auto;
+  }
+  
+  .logo {
+    font-size: 56px;
+    background-image: linear-gradient(to right, #48d4d4, #202693);
+    --webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .tkn-flex {
+      display: flex;
+      justify-content: flex-start;
+  }
+
+    .graph-wrapper {
+      background-color: var(--color-primary);
+      width: 420px;
+      height: 420px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .holders {
+      background-color: var(--color-white);
+      height: 400px;
+      width: 400px;
+      border-radius: 5px;
+    }
+  
+    .pie {
+      background-color: var(--color-white);
+      height: 400px;
+      width: 400px;
+      border-radius: 5px;
+    }
+}
+
 /*============== MEDIA QUERIES (Small Desktop)=================*/
 
-@media screen and (max-device-width: 110px) {
+@media screen and (max-device-width: 1100px) {
   .container {
     width: var(--container-width-md);
     margin: auto;
@@ -369,7 +473,7 @@
 
 /*============== MEDIA QUERIES (Z-FOLD)=================*/
 
-@media(max-width: 320px){ 
+@media(max-width: 320px) { 
   .container {
     width: var(--container-width-sm);
     margin: auto;
@@ -447,5 +551,4 @@
     z-index: -2;
     opacity: .2;
   }
-
 }
