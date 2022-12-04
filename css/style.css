@@ -10,7 +10,7 @@
 }
 
 :root {
-  --color-primary: #DAB863;
+  --color-primary: #2bcac8;
   --color-dark: #16181D;
   --color-white: #ffffff;
 
@@ -45,7 +45,9 @@ body {
 
 .logo {
   font-size: 60px;
-  color: var(--color-primary);
+  background-image: linear-gradient(to right, #48d4d4, #202693);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .tsuka {
@@ -63,7 +65,7 @@ body {
   justify-content: space-evenly;
 }
 .tkn-wrapper {
-  background-color: var(--color-primary);
+  background-image: linear-gradient(to right, #48d4d4, #2d35a9);
   width: 320px;
   height: 170px;
   border-radius: 5px;
@@ -80,13 +82,14 @@ body {
 }
 
 .graph-wrapper {
-  background-color: var(--color-primary);
+  background-image: linear-gradient(to right, #48d4d4, #2d35a9);
   width: 480px;
   height: 480px;
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 2px 2px 40px #455858;
 }
 
 .holders {
@@ -108,7 +111,7 @@ body {
 .gradient {
   width: 400px;
   height: 400px;
-  background-color: var(--color-primary);
+  background-image: linear-gradient(to right, #48d4d4, #2d35a9);
   border-radius: 39% 61% 61% 39% / 40% 54% 46% 60% ;
   position: absolute;
   top: 400px;
@@ -129,4 +132,24 @@ body {
   filter: blur(40px);
   z-index: -2;
   opacity: .2;
+}
+
+.wavy-dots {
+  position: absolute;
+  top: -380px;
+  right: -100px;
+  transform: rotate(45deg);
+  width: 1000px;
+  height: 1000px;
+  z-index: -2;
+}
+
+.wavy-dots-2 {
+  position: absolute;
+  top: -380px;
+  right: 1000px;
+  transform: rotate(-45deg);
+  width: 1000px;
+  height: 1000px;
+  z-index: -2;
 }
