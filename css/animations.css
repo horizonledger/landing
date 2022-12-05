@@ -28,28 +28,13 @@
 }
 
 .logo {
-  animation-name: slideInTop;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  animation: slideInTop 1s ease-in-out 0 1 normal;
 }
 
 .tkn-wrapper {
-  animation-name: slideInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  animation: slideInLeft 1s ease-in-out 0 1 normal;
 }
 
 .graph-wrapper {
-  animation-name: slideInDown;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-direction: normal;
+  animation: slideInDown 1s ease-in-out 0 1 normal;
 }
