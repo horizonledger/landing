@@ -29,12 +29,28 @@
 
 .logo {
   animation: slideInTop 1s ease-in-out 0 1 normal;
+  animation-name: slideInTop;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
 .tkn-wrapper {
-  animation: slideInLeft 1s ease-in-out 0 1 normal;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
 
 .graph-wrapper {
-  animation: slideInDown 1s ease-in-out 0 1 normal;
+  animation-name: slideInDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: 1;
+  animation-direction: normal;
 }
