@@ -79,7 +79,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 100px 0;
-  border: 2px solid var(--color-white);
 }
 
 h1 {
