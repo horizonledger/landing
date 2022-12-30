@@ -75,12 +75,6 @@ body {
   margin: 0 10px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 100px 0;
-}
-
 h1 {
   font-size: 50px;
 }
