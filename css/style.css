@@ -75,6 +75,11 @@ body {
   margin: 0 10px;
 }
 
+.content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 h1 {
   font-size: 50px;
 }
