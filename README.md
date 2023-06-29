@@ -1,7 +1,8 @@
 #install
 
-need npm
-in this directory npm install
-
+install npm
 npm install --global http-server
-http-server
+
+in this directory npm install
+> npx eleventy
+cd site && http-server

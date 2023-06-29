@@ -1,0 +1,9 @@
+h1 {
+    font-size: 50pt;
+}
+
+#hero {
+    color: blue;
+    font-size: 32px;
+    /* Add any other styles you want */
+}
