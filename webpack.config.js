@@ -1,22 +1,48 @@
-const ESLintPlugin = require('eslint-webpack-plugin');
 const path = require('path');
-const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const messageData = require('./src/data/message.json');
 
 
 module.exports = {
-    mode: 'development', // or 'production'
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader'
+            }
+        ]
+    },
     plugins: [
-        new ESLintPlugin({
-            extensions: ['js', 'jsx'],
-            exclude: ['node_modules'],
-            overrideConfigFile: path.resolve(__dirname, '.eslintrc.json'),
-        }),
-        new webpack.DefinePlugin({
-            'process.env.NODE_DEBUG': JSON.stringify(false),
-        }),
+        new HtmlWebpackPlugin({
+            title: 'Handlebars Webpack Example',
+            template: 'src/templates/index.hbs',
+            inject: false,
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            },
+            templateParameters: {
+                'title': 'Handlebars Webpack Example',
+                'message': messageData.message
+            }
+        })
     ]
 };
+
+// const ESLintPlugin = require('eslint-webpack-plugin');
+//     plugins: [
+//         new ESLintPlugin({
+//             extensions: ['js', 'jsx'],
+//             exclude: ['node_modules'],
+//             overrideConfigFile: path.resolve(__dirname, '.eslintrc.json'),
+//         }),
+//         new webpack.DefinePlugin({
+//             'process.env.NODE_DEBUG': JSON.stringify(false),
+//         }),
+//     ]
+// };
