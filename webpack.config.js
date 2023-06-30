@@ -1,5 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+
 const messageData = require('./src/data/message.json');
 
 
@@ -14,6 +18,13 @@ module.exports = {
             {
                 test: /\.hbs$/,
                 loader: 'handlebars-loader'
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
             }
         ]
     },
@@ -30,7 +41,15 @@ module.exports = {
                 'title': 'Handlebars Webpack Example',
                 'message': messageData.message
             }
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: './src/styles', to: 'styles' }  // copy all files in src/styles to dist/styles
+            ]
         })
+        // new MiniCssExtractPlugin({
+        //     filename: 'main.css',
+        // })
     ]
 };
 
