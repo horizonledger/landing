@@ -44,7 +44,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: './src/styles', to: 'styles' }  // copy all files in src/styles to dist/styles
+                { from: './src/styles', to: 'dist/styles' }  // copy all files in src/styles to dist/styles
             ]
         })
         // new MiniCssExtractPlugin({
