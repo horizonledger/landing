@@ -8,49 +8,49 @@ const messageData = require('./src/data/message.json');
 
 
 module.exports = {
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.hbs$/,
-                loader: 'handlebars-loader'
-            },
-            {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ]
-            }
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.hbs$/,
+        loader: 'handlebars-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
         ]
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Handlebars Webpack Example',
-            template: 'src/templates/index.hbs',
-            inject: false,
-            minify: {
-                removeComments: true,
-                collapseWhitespace: true
-            },
-            templateParameters: {
-                'title': 'Handlebars Webpack Example',
-                'message': messageData.message
-            }
-        }),
-        new CopyWebpackPlugin({
-            patterns: [
-                { from: './src/styles', to: 'dist/styles' }  // copy all files in src/styles to dist/styles
-            ]
-        })
-        // new MiniCssExtractPlugin({
-        //     filename: 'main.css',
-        // })
+      }
     ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Handlebars Webpack Example',
+      template: 'src/templates/index.hbs',
+      inject: false,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      },
+      templateParameters: {
+        'title': 'Handlebars Webpack Example',
+        'message': messageData.message
+      }
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/styles', to: 'styles' }  // copy all files in src/styles to dist/styles
+      ]
+    })
+    // new MiniCssExtractPlugin({
+    //     filename: 'main.css',
+    // })
+  ]
 };
 
 // const ESLintPlugin = require('eslint-webpack-plugin');
