@@ -301,3 +301,7 @@ a.pure-button-primary {
         font-size: 300%;
     }
 }
+
+.header {
+    background: #000;
+}
